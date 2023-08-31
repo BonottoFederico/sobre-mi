@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel, Tijeras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Juego de Piedra, Papel y Tijeras</h1>
+    </header>
+    
+    <main>
+        <div id="nombre-container">
+            <label for="nombre">Ingresa tu nombre: </label>
+            <input type="text" id="nombre" required>
+            <button onclick="iniciarJuego()">Comenzar</button>
+        </div>
+
+        <div id="juego-container" style="display: none;">
+            <section id="jugador">
+                <h2>Jugador: <span id="nombreJugador"></span></h2>
+                <p>Elije tu jugada:</p>
+                <div class="opciones" data-jugada="piedra" onclick="jugadaUsuario('piedra')">
+                    <img src="https://img.icons8.com/fluency/48/rock.png" alt="rock"/>
+                </div>
+                <div class="opciones" data-jugada="papel" onclick="jugadaUsuario('papel')">
+                    <img width="48" height="48" src="https://img.icons8.com/external-soft-fill-juicy-fish/60/external-paper-contact-us-soft-fill-soft-fill-juicy-fish.png" alt="external-paper-contact-us-soft-fill-soft-fill-juicy-fish"/>
+                </div>
+                <div class="opciones" data-jugada="tijeras" onclick="jugadaUsuario('tijeras')">
+                    <img width="48" height="48" src="https://img.icons8.com/ios/48/cut.png" alt="cut"/>
+                </div>
+            </section>
+            <section id="computadora">
+                <h2>Computadora:</h2>
+                <p>Jugada de la computadora: <span id="jugadaComputadora"></span></p>
+            </section>
+            <section id="resultado">
+                <h2>Resultado:</h2>
+                <p id="mensajeResultado"></p>
+            </section>
+            <section id="puntaje">
+                <h2>Puntaje:</h2>
+                <p>Jugador: <span id="puntajeJugador">0</span></p>
+                <p>Computadora: <span id="puntajeComputadora">0</span></p>
+            </section>
+            <button onclick="reiniciarJuego()">Reiniciar</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

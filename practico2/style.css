@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#nombre-container, #juego-container {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+}
+
+label, p {
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    padding: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.opciones {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#jugadaComputadora {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#resultado {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#puntaje {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+    #nombre-container, #juego-container {
+        max-width: 100%;
+    }
+
+    .opciones {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    #jugadaComputadora {
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    #resultado {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    #puntaje {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+}
